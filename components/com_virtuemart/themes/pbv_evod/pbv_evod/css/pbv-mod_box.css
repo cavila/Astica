@@ -1,0 +1,102 @@
+/**** 
+
+START - MODULE MOD BOX STYLES 
+
+****/
+	
+div.moduletable_mod_box-2, div.moduletable_mod_box-3,
+div.moduletable_mod_box-4, div.moduletable_mod_box-5  {
+	padding: 15px 10px 10px;
+	background: #FAFAFA;
+	border:1px solid #e5e5e5;
+	margin: 10px auto;
+	width:97%;
+	float:left;
+	display:block;
+	}
+	
+.moduletable_mod_box-2 h3, .moduletable_mod_box-3 h3, .moduletable_mod_box-4 h3, .moduletable_mod_box-5 h3 {
+	color: #FAFAFA !important;
+	padding: 12px 5px 2px 25px !important;
+	font-size: 22px !important;
+	margin:0px 0px 0px 2px !important;
+	text-transform: uppercase !important;
+	font-family:  "Myriad Pro",Helvetica, Arial !important;
+	font-size: 16px !important;
+	font-weight:bold !important;
+	height: 45px !important;
+	width:285px !important;
+	position:relative !important;
+	top: -27px !important;
+	margin-bottom:-20px !important;
+	}
+	
+.moduletable_mod_box-2 h3{
+	color: #444444 !important;
+	background: url(../images/mod_box/mod_box_h3-gray.png) top left no-repeat transparent !important;
+	}
+	
+
+.moduletable_mod_box-3 h3{
+	background: url(../images/mod_box/mod_box_h3-blue.png) top left no-repeat transparent !important;
+	}
+	
+.moduletable_mod_box-4 h3{
+	background: url(../images/mod_box/mod_box_h3-green.png) top left no-repeat transparent !important;
+	}
+	
+.moduletable_mod_box-5 h3{
+	background: url(../images/mod_box/mod_box_h3-red.png) top left no-repeat transparent !important;
+	}
+	
+div.moduletable_mod_box-inner {
+	background: transparent !important;
+	border:none !important;
+	margin: 4px !important;
+	width:30% !important;
+	float:left !important;
+	}
+	
+.moduletable_mod_box-inner h3{
+	color: #000000 !important;
+	padding: 0px 5px 14px 8px !important;
+	font-weight: normal !important;
+	margin:0px 0px 2px 0px !important;
+	text-transform: none !important;
+	font-family: Helvetica, Arial, "Lucinda Grande" !important;
+	font-size: 16px !important;
+	background: transparent !important;
+	height: auto !important;
+	width:auto !important;
+	text-shadow: none !important;
+	top:0px !important;
+	}
+
+.moduletable_mod_box-inner a {
+	border-bottom:0px !important;
+	color:#7C0000;
+	}
+
+.moduletable_mod_box-inner p {
+	color: #444444;
+	font-size: 12px;
+	font-family: helvetica;
+	line-height: 17px;
+	padding: 0 0 0 8px;
+	}
+	
+.moduletable_mod_box-inner img {
+	background: #FFFFFF;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #DDDDDD #BBBBBB #BBBBBB #DDDDDD;
+	padding: 8px;
+	margin:0px 5px 5px 5px;
+	float:left;
+	}
+
+/**** 
+
+END - MODULE MOD BOX STYLES 
+
+****/

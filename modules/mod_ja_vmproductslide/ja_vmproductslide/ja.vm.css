@@ -1,0 +1,210 @@
+/*------------------------------------------------------------------------
+# JA Larix 1.0 - August, 2007
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2006 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+-------------------------------------------------------------------------*/
+div.vm_element {
+	left:-999em;
+	position:absolute;
+}
+a.addtocart {
+	text-indent: -2000px;
+	display: block;
+	width: 90px;
+	height: 30px;
+	background: url(../images/button-addtocart.gif) no-repeat bottom left;
+	outline: none;
+}
+.addtocart_button_module {
+	text-indent: -2000px;
+	display: block;
+	width: 90px;
+	height: 30px;
+	background: url(../images/button-addtocart.gif) no-repeat bottom left;
+	outline: none;
+	border:0px;
+}
+div.vmCartContainer {
+	background:#FFF;
+}
+
+div.vmCartContainer div {
+	display: inline;	
+}
+
+
+.addtocart_button {
+	text-indent: -2000px;
+	display: inline;
+	width: 90px;
+	height: 30px;
+	background: url(../images/button-addtocart.gif) no-repeat top left;
+	outline: none;
+	vertical-align:top;
+}
+
+/* VIRTUE MART STYLE
+----------------------------------------------------------- */
+#ja-feature {
+	margin: 0px;
+	padding: 5px;
+	position: relative;
+}
+
+#ja-feature a {
+	font-weight: bold;
+	outline: none;
+}
+
+#ja-feature-products img {
+	margin: 5px;
+}
+
+#ja-feature-products td {
+	vertical-align: top;
+	padding-right: 3px;
+}
+
+#ja-banners {
+	text-align: center;
+}
+
+/* JA product */
+#ja-vm-cart {
+	color: #FFFFFF;
+	width: 243px;
+	margin: 0px;
+	padding-left: 20px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url(../images/vm-cart-bg.gif) top right no-repeat;
+}
+#ja-vm-cart div {
+
+}
+#ja-vm-cart div.moduletable h3 {
+	margin: 10px 0px 0px -70px;
+	padding: 0;
+	text-transform: uppercase;
+	background: none;
+	border-top: none;
+	text-align: center;
+}
+
+#ja-vm-cart div.moduletable a {
+	display: block;
+	width: 100px;
+	height: 19px;
+	margin: 5px 0 0 0;
+	text-indent: -2000px;
+	background: url(../images/button-viewcart.gif) top right no-repeat;
+	outline: none;
+}
+
+#ja-vm-cart br {
+	display: none;
+}
+
+/* Style product */
+div.ja-productwrap {
+	margin: 0!important;
+}
+
+div.ja-product {
+	margin: 0 15px!important;
+}
+
+div.ja-product h3 {
+	margin: 0 -5px 5px;
+	font-size: 120%;
+	text-transform: uppercase;
+	text-indent: 25px;
+	line-height: normal;
+	background: url(../images/ci-right.gif) no-repeat top right;
+}
+
+div.ja-product h3 a {
+	display: block;
+	padding: 8px 0 8px 5px;
+	color: #403C3A;
+	background: url(../images/ci-left.gif) no-repeat top left;
+	text-decoration: none;
+}
+
+#product_list div {
+	margin: 0px;
+	padding: 0px;
+}
+
+span.ja-separator {
+	display: block;
+	height: 30px;
+	background: url(../images/dot.gif) repeat-x center left;
+	clear: both;
+}
+
+span.ja-firstsep {
+	margin-top: 10px;
+}
+
+#ja-content .componentheading a {
+	text-decoration: none;
+}
+
+.shop_tip {
+	width: 95% !important;
+	padding: 10px;
+	background: #E6E6E6;
+}
+
+.ja-rightseparator {
+	background: url(../images/v-dot.gif) right top repeat-y;
+}
+
+/* Categories */
+.vmcategories {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+.vmcategories:hover,
+.vmcategories:active,
+.vmcategories:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+/* Vituemart footer */
+div.vmfooter {
+	margin: 10px 0;
+	padding: 0;
+	clear: both;
+}
+
+/* Vituemart slider */
+a.titleproduct {
+	color: #CC0000;
+}
+
+/* JA News */
+#ja-newswrap div.moduletable {
+	margin: 0;
+	padding: 0;
+}
+div.vm_element {position:absolute;left:-999em;}
+
+div.vmCartModule hr  {
+	display:none;
+}
+div.vmCartModule a {
+	padding: 5px 0 6px 15px;
+	width: 90%;
+	display: block;
+	color: #403C3A;
+	font-weight: bold;
+	text-decoration: none;
+}

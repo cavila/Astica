@@ -1,0 +1,77 @@
+/**
+ * @version $Id: help.css,v 1.4 2008/09/16 21:49:49 mic Exp $
+ * @package CQI - Custom Quick Icons - Extension/Component/Module for Joomla! OS CMS
+ * @copyright (C) 2007/08 mic - michael [ http://www.joomx.com ]
+ * @info info@joomx.com
+ * @license CCL - Creative Commons License 2.0
+ */
+#jxbody {
+	font-family		: verdana, arial, sans-serif;
+	font-size		: 0.8em;
+	color			: #5F5F5F;
+}
+.jx_h1 {
+	color			: #30559C;
+	font-size		: 1.2em;
+	border-left		: 25px solid #30559C;
+	border-bottom	: 1px solid #30559C;
+	padding			: 0 0 2px 5px;
+}
+#jxbody li {
+	font-weight     : normal;
+}
+.li_header {
+	font-weight		:bold;
+}
+
+img {
+	border			: none;
+}
+
+.jx_header {
+	font-size		: 1.1em;
+	font-weight     : bold;
+}
+
+.jx_docinfo {
+	float           : left;
+	text-align		: left;
+	font-size		: 0.95em;
+	color			: #30559C;
+}
+.jx_close {
+	width			: 100%;
+	float           : right;
+	text-align		: right;
+}
+
+.jx_warningHeader {
+	color			: #CC0000;
+	font-weight     : bold;
+}
+.jx_warning {
+	margin			: 2px;
+	padding			: 3px;
+	border-top		: 2px solid #FF0000;
+	border-bottom	: 2px solid #FF0000;
+	background  	: #FFDDDD;
+}
+
+.jx_spacer {
+	margin-top		: 1.5em;
+	margin bottom	: 1.5em;
+	clear			: both;
+}
+
+.jx_text {
+	width			: 100%;
+	clear			: right;
+}
+
+.jx_tip {
+	margin			: 3px;
+	padding			: 3px;
+	border-top		: 2px solid #FEFF9F;
+	border-bottom	: 2px solid #FEFF9F;
+	background-color: #FFFFEF;
+}

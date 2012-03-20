@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5">
+	<name>JA VM Product Slider</name>
+	<author>JoomlArt.com</author>
+	<creationDate>May 2007</creationDate>
+	<copyright>(C) 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.1</version>
+	<description>
+		<![CDATA[
+		Version:<br />
+		<h2>JA VM Productslide 1.0.1</h2><br />
+		]]>
+	</description>
+	<files>
+		<filename module="mod_ja_vmproductslide">mod_ja_vmproductslide.php</filename>
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/application.php</filename>
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/ja.vmproductslide.js</filename>
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/ja.vm.css</filename>
+		
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/img/circle.png</filename>
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/img/re-left.gif</filename>
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/img/re-left-hover.gif</filename>
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/img/re-right.gif</filename>
+		<filename module="mod_ja_vmproductslide">ja_vmproductslide/img/re-right-hover.gif</filename>
+	</files>
+	<params>
+	  <param name="xheight" type="text" default="400" label="Height of div" description="Height of the div will display" />
+      <param name="xwidth" type="text" default="300" label="Width of div" description="Width of the div will display" />
+		<param name="typeproduct" type="list" default="0" label="Type of product display" description="Type of product display ">
+			<option value="0">All product</option>
+			<option value="1">Only special</option>
+			<option value="2">Lastest</option>
+		</param>
+		<param name="catid" type="text" default="0" label="Category" description="Display content of these categories only. separate by comma ',' " />
+		<param name="numElem" type="text" default="4" label="Number Element" description="number of element will display" />
+		 <param name="mode" type="list" default="1" label="Mode display" description="Defines mode of the product will display." >
+			<option value="horizontal">horizontal</option>
+			<option value="virtical">Virtical</option>
+		  </param>
+		 <param name="show_price" type="list" default="1" label="Show Product Price?" description="Defines wether the product price is displayed or not." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		  </param>
+		 <param name="show_addtocart" type="list" default="1" label="Show Add to cart?" description="Defines wether the Add to cart is displayed or not." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		  </param>
+		 <param name="auto" type="list" default="1" label="Auto run slide" description="Defines auto run slide is auto or not." >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		  </param>
+		 <param name="direction" type="list" default="left" label="Direction" description="Defines direction of slide" >
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		  </param>
+		 <param name="zipjs" type="list" default="left" label="Use zip Javascript?" description="Defines Use zip Javascrip or not" >
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		  </param>
+		<param name="delaytime" type="text" default="5" label="Rolling delay time" description="Time between two articles, in seconds" />
+		<param name="animationtime" type="text" default="1000" label="Animation time" description="Time of an animation, in miliseconds" />
+
+	</params>
+</install>

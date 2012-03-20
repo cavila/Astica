@@ -69,11 +69,6 @@ if (!defined( '_JOS_QUICKICON_MODULE' ))
 			quickiconButton( $link, 'icon-48-language.png', JText::_( 'Language Manager' ) );
 		}
 
-		if ( $user->get('gid') > 24 ) {
-			$link = 'index.php?option=com_translationsmanager';
-			quickiconButton( $link, 'icon-48-language_t.png', JText::_( 'Translation Manager' ) );
-		}
-
 		if ( $user->get('gid') > 23 ) {
 			$link = 'index.php?option=com_users';
 			quickiconButton( $link, 'icon-48-user.png', JText::_( 'User Manager' ) );

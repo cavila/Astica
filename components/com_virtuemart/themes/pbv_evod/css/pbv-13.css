@@ -1,0 +1,16 @@
+.addtocart_button:hover, .addtocart_button_module:hover  {
+	color: #990000;
+	}
+	
+.addtocart_button, .addtocart_button_module  {
+	background:transparent;
+	padding:5px !important;
+	line-height: 1.2em;
+	color: #1B57A3;
+	font-size:13px;
+	text-transform: capitalize;
+	font-family: arial, helvetica;
+	font-weight:normal;
+	width:auto;
+	height: auto;
+	}

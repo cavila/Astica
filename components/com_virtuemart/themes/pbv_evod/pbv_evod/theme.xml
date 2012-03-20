@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="theme">
+    <name>PBV EVOD Theme</name>
+    <version>1.0.0</version>
+    <creationDate>08.01.2011</creationDate>
+    <author>Powered by VirtueMart</author>
+    <authorEmail>info@poweredbyvirtuemart.com</authorEmail>
+    <authorUrl>http://www.poweredbyvirtuemart.com</authorUrl>
+    <copyright><![CDATA[&copy; 2011 Powered by VirtueMart]]></copyright>
+    <license>Closed Commercial License</license>
+    <description>
+    PBV EVOD VirtueMart theme.
+    </description>
+    <params>
+		<param name="productListStyle" type="list" default="browse/includes/browse_layouttable.tpl.php" label="Product List Style" description="Select the style of the product listings (=browse page)">
+			<option value="browse/includes/browse_layouttable.tpl.php">Product Listing with a table (default)</option>
+			<option value="browse/includes/browse_listtable.tpl.php">Flat Product List (fixed to 1 product per row, using a table)</option>
+			<option value="browse/includes/browse_notables.tpl.php">Product List (no table, div-based)</option>
+		</param>		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<!-- Begin Product Listing Configuration -->
+		<param name="showFeedIcon" type="radio" default="1" label="Show the Feed Icon?" description="Show/Hide the Feed Icon Link so customers can subscribe for the Product News Syndication.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showAddtocartButtonOnProductList" type="radio" default="1" label="Show the Add-to-cart Button on the product list?" description="Show/Hide the add-to-cart button on the main product listings. Customers will then be able to purchase the product from the details page only.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<!-- Begin Product Details Configuration -->
+		<param name="showVendorLink" type="radio" default="1" label="Show Vendor Link?" description="Show/Hide the link to the vendor of a product">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showManufacturerLink" type="radio" default="1" label="Show Manufacturer Link?" description="Show/Hide the link to the manufacturer of a product">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+		<param name="showAvailability" type="radio" default="1" label="Show Availability Information?" description="Show/Hide the availability information of a product">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showPathway" type="radio" default="0" label="Show additional Pathway on the Product Page?" description="Show/Hide the pathway on the product details page (The global pathway is updated anyway)">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />		
+		
+		<param name="useLightBoxImages" type="radio" default="1" label="Open Product Images in a LightBox?" description="Lightbox is an images showing widget. It opens the image in a centered position and hides the other part of the website under a gray overlay.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		
+		<param name="useGreyBoxOnCheckout" type="radio" default="1" label="Customer Checkout in a popup (GreyBox)?" description="GreyBox is a webpage UI dialog widget. It opens the page in a new inline-window and hides the other part of the website under a gray overlay.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="useAjaxCartActions" type="radio" default="1" label="Use Ajax to add, update or delete products from the cart?" description="When enabled, the customer can put products into his/her cart without being redirected to a new page. Customers who have disabled Javascript will still be able to add/update/delete products to/from the cart.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        
+        <param name="@spacer" type="spacer" default="" label="" description="" />
+        
+        <param name="showFeatured" type="radio" default="0" label="Show featured products on frontpage?" description="When enabled, featured products will be shown on the front page of VirtueMart.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        <param name="showlatest" type="radio" default="0" label="Show the latest products on the frontpage?" description="When enabled, latest products will be shown on the front page of VirtueMart.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        <param name="showRecent" type="text" default="5" label="Number of recent products to Display?" description="The number of recently viwed products to display on the browse and detail pages of VirtueMart.">
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="POWERED BY VIRTUEMART MULTI THEME CONFIGURATION" description="" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="GENERAL SHOP CONFIGURATION" description="" />		
+		<param name="flypageWidth" type="text" default="750" label="Width available for your Flypage" description="Enter how much space, in pixels, you have available to display your flypage (product page)."></param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="SHOP INDEX AND CATEGORY CONFIGURATION" description="" />
+		<param name="shopIndexColor" type="list" default="1" label="Choose the style and color for your Shop Index and Category Child List sections" description="Choose the style and color for your Shop Index and Category Child List sections.">
+			<option value="1">Default</option>
+			<option value="2">Gray</option>
+			<option value="3">Blue</option>
+			<option value="4">Green</option>
+			<option value="5">Red</option>
+			<option value="6">Rounded</option>
+			<option value="7">Text header</option>
+		</param>
+		<param name="categoryDesign" type="list" default="2" label="Choose the style for your sub-categories" description="Choose the style for your sub-categories.">
+			<option value="0">Gray Gradient</option>
+			<option value="1">Blue Gradient</option>
+			<option value="2">Basic</option>
+		</param>
+		<param name="categoryCount" type="text" default="3" label="Choose how many sub-categories to display per line." description="Choose how many sub-categories to display per line."></param>
+		<param name="categoryResizeToggle" type="radio" default="1" label="Enable the feature to resize your category thumbnail images" description="Set this to yes if you would like to resize your thumbnail images on the category browse pages, the sizing is set in the next input box.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="browseImageWidth" type="text" default="125" label="Width to resize the category browse images" description="Width to resize the category browse images."></param>
+		<param name="browseImageWidthHidden" type="text" default="300" label="Width to resize the category browse images for Browse Grid 7 (Hidden Boxslide)" description="Width to resize the category browse images for Browse Grid 7 (Hidden Boxslide)."></param>
+		<param name="saleTextDisplay" type="radio" default="0" label="Display the text in front of the price on the category pages" description="Display the text in front of the product price (ie. Sale price: $X.xx, or Everyday Price: $X.xx ).">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="@spacer" type="spacer" default="" label="PRODUCT PAGE AND GENERAL CONFIGURATION" description="" />		
+		<param name="saleText" type="text" default="Sale Price:" label="Text phrase to be displayed when a product is on sale" description="Text phrase to be displayed when a product is on sale."></param>
+		<param name="regText" type="text" default="Everyday Price:" label="Text phrase to be displayed for a regular priced product" description="Text phrase to be displayed for a regular priced product."></param>
+		<param name="savedText" type="text" default="You saved:" label="Text phrase to show the customer how much they have saved" description="Text phrase to show the customer how much they have saved on a product on sale."></param>
+		<param name="addtocart_style" type="list" default="1" label="Choose your Add to Cart Button Graphic" description="This will change your shopping cart add-to-cart button set.">
+			<option value="1">Style 1</option>
+			<option value="2">Style 2</option>
+			<option value="3">Style 3</option>
+			<option value="4">Style 4</option>
+			<option value="5">Style 5</option>
+			<option value="6">Style 6</option>
+			<option value="7">Style 7</option>
+			<option value="8">Style 8</option>
+			<option value="9">Style 9</option>
+			<option value="10">Style 10</option>
+			<option value="11">Style 11</option>
+			<option value="12">Style 12</option>
+			<option value="13">Style 13</option>
+			<option value="14">Style 14</option>
+		</param>
+		<param name="vmCartContainer" type="list" default="0" label="Choose your product details flypage product attribute box style" description="This will change the add to cart color scheme displayed on the product flypage.">
+			<option value="0">Default</option>
+			<option value="1">Style 1</option>
+			<option value="2">Style 2</option>
+			<option value="3">Style 3</option>
+			<option value="4">Style 4</option>
+			<option value="5">Style 5</option>
+			<option value="6">Style 6</option>
+			<option value="7">Style 7</option>
+			<option value="8">Style 8</option>
+			<option value="9">Style 9</option>
+		</param>
+		<param name="inlineAddtoCart" type="radio" default="1" label="Display the Add to Cart button inside of the product attribute box" description="Display the Add to Cart button inside of the product attribute box.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="inlineForm" type="radio" default="1" label="Inline Product Attribute Drop Down Forms" description="This will toggle your product drop down forms to have inline field labels">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="showButtons" type="radio" default="1" label="Display the product tool buttons (PDF, Print and Email)." description="NOTE: This needs to be enabled to display the PDF, Print and Email buttons configured in the Site Layout Tab.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="resizeThumbnails" type="text" default="50" label="Resize your additional product thumbnails width displayed on your product detail pages (flypage)" description="">
+		</param>
+		<param name="useScript" type="radio" default="1" label="Use timthumb to generate cleaner product thumbnails." description="If your thumbnails or product images are not displaying, set this to NO.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="tabType" type="list" default="0" label="Choose your tab styles" description="This will change the style of the tabs if your flypage includes the tabs.">
+			<option value="0">Default</option>
+			<option value="1">Style 1</option>
+			<option value="2">Style 2</option>
+			<option value="3">Style 3</option>
+			<option value="4">Style 4</option>
+		</param>
+		<param name="buyLink" type="text" default="Buy Now" label="Text phrase to be displayed on Flypage 2 top right Buy Now Button" description=""></param>
+		<param name="descLink" type="text" default="Description" label="Text phrase to be displayed on Flypage 2 top right" description=""></param>
+		<param name="reviewsLink" type="text" default="Product Reviews" label="Text phrase to be displayed on Flypage 2 top right" description=""></param>
+		
+	</params>
+</mosinstall>

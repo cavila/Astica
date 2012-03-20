@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="de_DE"
+      xml:lang="de_DE">
+<head>
+    <title>Custom QuickIcons - Individuelle Icons/Menüs</title>
+    <link href="help.css"
+          rel="stylesheet"
+          type="text/css"
+          media="all" />
+    <meta name="copyright"
+          content="(C) 2006/07/08 www.joomx.com All rights reserved." />
+    <meta name="license"
+          content="http://www.joomx.com GNU/GPL" />
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div id="jxbody">
+		<h1 class="jx_h1">Custom QuickIcons - Übersicht</h1>
+		<div class="jx_close">
+			<a href="http://joomlacode.org/gf/project/joomx/" target="_blank" title="CQI-Project">Aktuellste Version hier</a>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_tip">
+			CQI besteht aus 2 Teilen: dieser Komponente hier <strong>und</strong> einem Modul.
+			<br />
+			Das Modul kann an 2 Positionen veröffentlicht werden:
+			<ol>
+				<li>icon (ersetzt damit das bisherige Modul quickicons und ist Standardvorgabe)</li>
+				<li>cpanel (ist dann sichtbar mit weiteren Modulen rechts in der Modulleiste)</li>
+			</ol>
+			Eine weitere Möglichkeit wäre, das Modul zu kopieren und an beiden Positionen zu veröffentlichen, allerdings mit unterschiedlichen Icons.
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_header">Toolbar</div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">Speichern</span>
+					<br />
+					Aktuelle Bearbeitung speichern und zurück zur Übersicht
+				</li>
+				<li>
+					<span class="li_header">Übernehmen</span>
+					<br />
+					Aktuelle Bearbeitung speichern aber dieses Fenster nicht verlassen
+				</li>
+				<li>
+					<span class="li_header">Abbrechen</span>
+					<br />
+					Zum vorigen Menü zurück (ohne Speichern)
+				</li>
+				<li>
+					<span class="li_header">Hochladen</span>
+					<br />
+					Bilder mit Hilfe des Mediamanagers hochladen
+				</li>
+				<li>
+					<span class="li_header">Hilfe</span>
+					<br />
+					Dieses Dokument
+				</li>
+			</ul>
+		</div>
+		<div class="jx_header">Menütabs</div>
+		<div class="jx_text">Die Einstellungen werden in den folgenden Menüpunkten vorgenommen</div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">Generell</span>
+					<ul>
+						<li>
+							<span class="li_header">Ziel</span>
+							<br />
+							Hier für interne Komponenten den relativen Link (ab index2.php) zum Komponentenaufruf
+							angeben - er wird dann automatisch durch das System ergänzt.
+							<div class="jx_tip">Werden externe Verknüpfungen angegeben, sind die Links immer in der Form <em>http://www.website_link.com</em> anzugeben!</div>
+							anzugeben!
+						</li>
+						<li>
+							<span class="li_header">Neues Fenster</span>
+							<br />
+							Soll die Verknüpfung in einem neuen Fenster aufgemacht werden
+						</li>
+						<li>
+							<span class="li_header">Aktiviert</span>
+							<br />
+							Ist dieses Icon/Menü verfügbar?
+						</li>
+						<li>
+							<span class="li_header">Reihenfolge</span>
+							<br />
+							Bei einer Neuanlage werden neue Menüpunkte <strong>automatisch
+							</strong> an den Anfang gereiht (Feld ist nicht anklickbar!).
+							<br />
+							Eine Umreihung kann erst nach dem Speichern vorgenommen werden
+						</li>
+						<li>
+							<span class="li_header">Berechtigt</span>
+							<br />
+							Hier definieren welche Benutzergruppen Zugriff auf diesen Menüpunkt
+							haben dürfen/sollen - die Berechtigung kann jederzeit geändert werden.
+							<div class="jx_tip">Berücksichtigt werden nur diejenigen Gruppen welche Zugang zum Backend haben.</div>
+							<div class="jx_warning"><span class="jx_warningHeader">Hinweis:</span>
+							Nach der Komponenteninstallierung werden alle Menüpunkte mit Superadminrechten versehen,
+							das heisst dass alle Menüpunkte vorerst nur vom Superadmin gesehen und aufgerufen werden
+							können
+							</div>
+						</li>
+						<li>
+							<span class="li_header">Benutzer</span>
+							<br />
+							Hier kann dieser Menüpunkt einem (1) bestimmten Benutzer aus den Administratorengruppen zugewiesen
+							werden, das Icon ist dann nur für diesen Benutzer sichtbar
+							<div class="jx_warning"><span class="jx_warningHeader">Hinweis:</span>
+							Diese Art der Zuweisung hat Vorrang vor der Gruppendefinierung!
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_text">
+			<ul>
+				<li><span class="li_header">Text</span>
+					<ul>
+						<li>
+							<span class="li_header">Präfix</span>
+							<br />
+							Vorzeichen zum Menüpunkttext, kann entweder mit den angeführten
+							Formatierungmöglichkeiten vorgenommen werden oder eigene Vorzeichen definieren
+						</li>
+						<li>
+							<span class="li_header">Text</span>
+							<br />
+							Der eigentliche Menütext welcher später in der Übersicht angezeigt wird.
+							Je kürzer desto besser - weiterer Text welcher angezeigt wird, kann unter Titel
+							angegeben werden (als alt. bzw. title.tag)
+						</li>
+						<li>
+							<span class="li_header">Vorgebenene Formatierungsmöglichkeiten zur Menüpunktanzeige</span>
+							<br />
+							<strong>Fett</strong>, <em>Schräg</em>, <span style="text-decoration:underline;">Unterstrichen</span>
+							<div class="jx_tip">Es kann jede beliebige HTML-Formatierung in beliebiger Kombination eingesetzt werden</div>
+						</li>
+						<li>
+							<span class="li_header">Postfix</span>
+							<br />
+							Der Formatierungsabschluss zum Präfix.
+							<div class="jx_warning"><span class="jx_warningHeader">Hinweis:</span>
+							Falsche Angaben können bis zu einer Nichtanzeige einzelner
+							Menüpunkte gehen!
+							</div>
+						</li>
+						<li>
+							<span class="li_header">Tastenkürzel</span>
+							<br />
+							Für Benutzer mit Beeinträchtigungen und weil es das Gesetz innerhab der EU vorschreibt,
+							sollten alle (bzw. die wichtigsten Menüpunkte) ein Tastaturkürzel besitzen um nicht
+							auf eine Eingabe mit der Maus angewiesen zu sein<br />
+							Die Shortcuts werden mittles der Taste ALT + PLUS 1 Zeichen aufgerufen<br />
+							Die Kürzel müssen einmalig sein und dürfen nicht 2x für verschiedene
+							Menüs vergeben werden!
+						</li>
+						<li>
+							<span class="li_header">Titel</span>
+							<br />
+							Text welcher angezeigt wird wenn mit der Maus über den Menüpunkt gefahren wird.
+							Hier kann eventuell ein ausführlicher Text stehen, sollte aber nicht länger als
+							60 Zeichen sein
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_text">
+			<ul>
+				<li><span class="li_header">Anzeige</span>
+					<ul>
+						<li>
+							<span class="li_header">Ausgabe als</span>
+							<br />
+								Hier definieren wie der Menüpunkt angezeigt werden soll
+							<ul>
+								<li>Icon &amp; Text (Vorgabe)</li>
+								<li>Nur Icon</li>
+								<li>Nur Text</li>
+							</ul>
+						</li>
+						<li>
+							<span class="li_header">Bildverzeichnisse</span>
+							<br />
+							Hier werden alle innerhalb des CMS gefundenen Bilderordner zru Auswahl angezeigt
+						</li>
+						<li>
+							<span class="li_header">Icon</span>
+							<br />
+							Hier das anzuzeigende Menübild auswählen (es öffnet sich eine neues Fenster)
+							<div class="jx_tip">Über das Dropdownmenü <strong>Bildverzeichnisse</strong> kann das Verzeichnis gewählt werden. Es werden alle Verzeichnisse angezeigt welche Bilder enhalten.
+							<br />
+							<strong>Tipp</strong>: über den Mediamanager (siehe Button oben) kann ein eigenes Iconverzeichnis angelegt bzw. ein Vorhandenes aufgerufen und dann diese Icons eingebunden werden</div>
+							<div class="jx_warning"><span class="jx_warningHeader">Hinweis:</span>
+							Wurde der Mediamanager aus CQI aufgerufen um einen neuen Bilderordner zu erstellen, muss CQI selber nochmals über das Menü aufgerufen werden da ansonsten dieser neue Pfad noch nicht in der Dropdownliste enthalten ist!
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_text">
+			<ul>
+				<li><span class="li_header">Check</span>
+					<ul>
+						<li>
+							<span class="li_header">Überprüfe Komponente</span>
+							<br />
+							Bei internen Verlinkungen kann es sinnvoll sein, vor dem Anzeigen des Menüs zu
+							überprüfen ob diese Komponente noch existiert und nicht eventuell schon deinstalliert
+							wurde!<br />
+							Soll eine vorige Überprüfung vorgenommen werden, dann hier mit Ja bestätigen
+						</li>
+						<li>
+							<span class="li_header">Name &amp; Pfad</span>
+							<br />
+							Wenn eine Komponentenüberprüfung stattfinden soll, dann hier den internen Pfad zu
+							dieser Komponente angeben - z.B.: customquickicons/admin.customquickicons.php würde
+							folgenden Pfad ergeben (wird intern ergänzt):<br />
+							<em>../administrator/components/com_customquickicons/admin.customquickicons.php</em>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_text">
+			<ul>
+				<li><span class="li_header">Über</span>
+					<br />
+					Diverses zu und Über diese Komponente
+				</li>
+			</ul>
+		</div>
+		<div class="jx_docinfo">Doc.Info: v.1.5 - 2008.09.19</div>
+
+		<div class="jx_close">
+			<a href="javascript:void(0);" onClick="window.close();" title="Fenster Schliessen">Fenster Schliessen</a>
+			&nbsp;|&nbsp;
+			<a href="http://joomlacode.org/gf/project/joomx/" target="_blank" title="CQI-Project">Aktuellste Version hier</a>
+		</div>
+	</div>
+</body>
+</html>

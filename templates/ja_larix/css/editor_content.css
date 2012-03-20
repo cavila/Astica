@@ -1,0 +1,20 @@
+/*------------------------------------------------------------------------
+# JA Larix  for Joomla 1.5 - Version 1.4 - Licence Owner JA130602
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+body {
+margin:0;
+padding:0;
+text-align: left;
+background: white;
+background-image: none;
+}
+textarea {
+	background: #FFFFFF;
+	font: 12px "Courier New", monospace;
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+	<name>Custom QuickIcons</name>
+	<creationDate>2008.10.01</creationDate>
+	<author>mic / http://www.joomaax.com</author>
+	<copyright>(C) 2006/07/08 mic. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@joomx.com</authorEmail>
+	<authorUrl>http://joomlacode.org/gf/project/joomx/</authorUrl>
+	<version>2.1.0</version>
+	<!-- J.1.5.x -->
+	<description>
+		<![CDATA[
+	    	<div style="font-weight:normal">
+	    		<div>
+		    		<strong>CQI - Custom Quick Icons</strong> replaces the standard quickicon module with several options
+		    	</div>
+		    	<div>
+		    		If you find CQI useful, please consider supporting us by rating or reviewing this extension at the
+		    		<a href="http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,463/Itemid,35/" target="_blank">Joomla! Extensions Directory.</a>
+		    	</div>
+		    </div>
+    	]]>
+	</description>
+	<!--
+	<files folder="site">
+		<filename>index.html</filename>
+	</files>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	-->
+
+	<!--
+	<languages folder="language">
+		<language tag="de-DE">de-DE/de-DE.com_customquickicons.ini</language>
+		<language tag="en-GB">en-GB/en-GB.com_customquickicons.ini</language>
+	</languages>
+	-->
+
+	<administration>
+		<menu>CQI - QuickIcons</menu>
+
+		<!--
+		<menu img="components/com_xxx/media/images/icon-16-jx.png" link="option=com_xxxx">CQI</menu>
+		-->
+
+		<languages folder="admin/language">
+			<language tag="de-DE">de-DE/de-DE.com_customquickicons.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_customquickicons.menu.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_customquickicons.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_customquickicons.menu.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_customquickicons.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_customquickicons.menu.ini</language>
+		</languages>
+
+		<files folder="admin">
+			<filename>index.html</filename>
+      	    <filename>admin.customquickicons.php</filename>
+            <filename>admin.customquickicons.html.php</filename>
+            <filename>toolbar.customquickicons.php</filename>
+            <filename>toolbar.customquickicons.html.php</filename>
+            <filename>customquickicons.class.php</filename>
+
+            <filename>help/index.html</filename>
+            <filename>help/help.css</filename>
+            <filename>help/README.php</filename>
+            <filename>help/de-DE/index.html</filename>
+            <filename>help/de-DE/help.css</filename>
+            <filename>help/de-DE/screen.cquickicons.config.html</filename>
+            <filename>help/de-DE/screen.cquickicons.mgr.html</filename>
+            <filename>help/en-GB/index.html</filename>
+            <filename>help/en-GB/help.css</filename>
+            <filename>help/en-GB/screen.cquickicons.config.html</filename>
+            <filename>help/en-GB/screen.cquickicons.mgr.html</filename>
+
+            <filename>images/index.html</filename>
+            <filename>images/lightbulb.png</filename>
+            <filename>images/tip.png</filename>
+            <filename>images/addedit.png</filename>
+            <filename>images/browser.png</filename>
+            <filename>images/categories.png</filename>
+            <filename>images/config.png</filename>
+            <filename>images/cpanel.png</filename>
+            <filename>images/edit_f2.png</filename>
+            <filename>images/extension.png</filename>
+            <filename>images/frontpage.png</filename>
+            <filename>images/impressions.png</filename>
+            <filename>images/inbox.png</filename>
+            <filename>images/langmanager.png</filename>
+            <filename>images/mediamanager.png</filename>
+            <filename>images/menu.png</filename>
+            <filename>images/module.png</filename>
+            <filename>images/searchtext.png</filename>
+            <filename>images/sections.png</filename>
+            <filename>images/templatemanager.png</filename>
+            <filename>images/trash.png</filename>
+            <filename>images/user.png</filename>
+            <filename>images/tpl-khepri-article.png</filename>
+            <filename>images/tpl-khepri-category.png</filename>
+            <filename>images/tpl-khepri-config.png</filename>
+            <filename>images/tpl-khepri-extension.png</filename>
+            <filename>images/tpl-khepri-frontpage.png</filename>
+            <filename>images/tpl-khepri-language.png</filename>
+            <filename>images/tpl-khepri-media.png</filename>
+            <filename>images/tpl-khepri-menumgr.png</filename>
+            <filename>images/tpl-khepri-module.png</filename>
+            <filename>images/tpl-khepri-plugin.png</filename>
+            <filename>images/tpl-khepri-section.png</filename>
+            <filename>images/tpl-khepri-themes.png</filename>
+            <filename>images/tpl-khepri-trash.png</filename>
+            <filename>images/tpl-khepri-user.png</filename>
+
+            <!-- special section, the cqi.installer itself will copy these files, because the J.installer cannot do that!-->
+            <filename>modules/cqi.css</filename>
+            <filename>modules/mod_customquickicons.php</filename>
+            <filename>modules/mod_customquickicons.xm_</filename>
+
+            <filename>modules/de-DE.mod_customquickicons.ini</filename>
+            <filename>modules/en-GB.mod_customquickicons.ini</filename>
+            <filename>modules/es-ES.mod_customquickicons.ini</filename>
+
+            <folder>install</folder>
+		</files>
+	</administration>
+
+	<installfile>install/install.customquickicons.php</installfile>
+	<uninstallfile>install/uninstall.customquickicons.php</uninstallfile>
+</install>

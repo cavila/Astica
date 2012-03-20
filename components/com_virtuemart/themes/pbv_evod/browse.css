@@ -1,0 +1,394 @@
+.thumbs { padding-top: 2px; overflow: hidden; }
+.thumbs img, #largeImage {
+ border: 1px solid #DDD;
+ padding: 4px;
+ background-color: white;
+ cursor: pointer;
+}
+.thumbs img {
+ float: left;
+ margin-right: 6px;
+}
+.panel { position: relative; }
+
+.browse_header {
+	font-family: arial !important;
+	margin:0px;
+	padding:8px 0 3px 10px;
+	font-size:14px !important;
+	letter-spacing:0;
+	text-transform:uppercase;
+	font-weight:bold;	
+	}
+
+.browse_cat_container {
+	float:left;
+	width:99.75%;
+	border:1px solid #DDDDDD;
+	background: url(images/gray-gradient_container.png) repeat-x bottom left #FFFFFF;
+	border-top:0;
+	}
+	
+.browse_content {
+	float:left;
+	padding:10px 15px;
+	width: 100%;
+	}
+
+.browse_top {
+	float:left;
+	width: 100%;
+	}
+
+.browse_top-left {
+	background:transparent url(images/browse/browse_top_left.png) no-repeat scroll 0 0;
+	float:left;
+	height:32px;
+	width:5px;
+	}
+
+.browse_top-right {
+	background:transparent url(images/browse/browse_top_right.png) no-repeat scroll 0 0;
+	float:right;
+	height:32px;
+	width:5px;
+	}
+
+.browse_top-center {
+	background:transparent url(images/browse/browse_top_center.png) repeat-x scroll 0 0;
+	height:32px;
+	margin:0 5px;
+	}
+
+.vmBrowseContainer {
+	width:99%;
+	padding: 0px;
+	background: transparent;
+	border:0px solid #999999;
+	float:left;
+	margin-top:15px;
+	margin-right:12px;
+	text-align: center;
+	font-family: calibri, Arial;
+	}
+	
+.vmCatBrowse {
+	background: url(images/tab1/tab_bg-inactive.png) repeat-x bottom left #515151;
+	width: 450px;
+	border: 1px solid #CCC;	
+	border-bottom: 0px solid #F5E1B8;	
+	padding:4px 4px 4px 10px;
+	}
+	
+.vmCatBrowse a{
+	float:right;
+	}
+	
+h3.vmCatBrowse {
+	text-transform: none !important;
+	font-family: Calibri, Arial, "Helvetica Neue", Georgia, arial !important;
+	font-size: 20px !important;
+	line-height:1.15em;
+	margin-bottom:0;
+	color:#FFF;
+	}
+	
+#vmMainPage .moduletable_mod_box-7 h3 {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-family: "arial narrow", arial;
+	margin-bottom: 15px;
+	margin-top: 0px;
+	}
+	
+.vmNavList {
+	text-align: center;
+	margin-bottom:25px;
+	float:left;
+	background: #FEFEFE;
+	border:1px solid #EEE;
+	width:97%;
+	padding:8px;
+	}
+	
+.vmNavListProduct img{
+	padding:4px;	
+	border:1px solid transparent;
+	border-bottom:0px solid #AAA;
+	background:#FFF;
+	}
+
+.vmNavListProduct {
+	float:left;
+	text-align: center;
+	margin-right:8px;
+	margin-bottom:10px;
+	}
+	
+.vmNavListProduct2:hover {
+	background: url(images/gray-gradient.png) repeat-x bottom left;
+	}
+	
+.vmNavListProduct2 {
+	float:left;
+	text-align: left;
+	margin-right:8px;
+	margin-bottom:10px;
+	padding-bottom: 10px;
+	background: #FFF;
+	border:1px solid #BBB;
+	overflow: hidden;
+	border-top:0;
+	}
+	
+.vmNavListProduct3 {
+	float:left;
+	text-align: left;
+	margin-right:8px;
+	margin-bottom:10px;
+	padding-bottom: 10px;
+	background: transparent;
+	border:0;
+	}
+	
+a.vmCatProductText{
+	padding: 8px;
+	background: url(images/button_bg.png) repeat-x bottom left #FAFAFA;
+	border:1px solid #AAA;
+	font-family: Arial, Cambria !important;
+	display:block;
+	color:#515151 !important;
+	}
+	
+a.vmCatProductText2 {
+	padding: 4px 4px 4px 10px;
+	background: url(images/bg_cat-name.jpg) no-repeat bottom left #0D0D0D;
+	font-family: Arial, Cambria !important;
+	letter-spacing: -0.05em;
+	color:#FEFEFE !important;
+	display:block;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-weight: bold !important;  	
+	}
+	
+.vmNavListProduct2:hover a.vmCatProductText2 {
+	background: url(images/button_large-hover.png) repeat-x bottom left #5ea0f0;
+	}
+	
+a.vmCatProductText3 {
+	padding: 0px;
+	background: transparent;
+	font-family: Arial, Cambria !important;
+	letter-spacing: -0.05em;
+	color:#313131 !important;
+	display:block;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	font-weight: bold !important;
+	}
+	
+a:hover.vmCatProductText {
+	padding: 8px;
+	background: url(images/light-gradient.png) repeat-x bottom left #FFF;
+	border: 1px solid #F5E1B8;
+	}
+
+.vmBrowseProductTitle  a{
+	margin:10px auto 0px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.12em;
+	text-decoration: none;
+	letter-spacing: 0.01em;
+	color: #666666;
+	font-family: Cambria,Arial, Helvetica, Verdana, Arial;
+	}
+
+.vmBrowseProductImage {
+	padding:0;
+	background: transparent;
+	border:0px solid #EAEAEA;
+	width:100%;
+	text-align:center;
+	overflow:hidden;
+	}
+	
+.vmBrowseProductImage img{
+	padding:6px;
+	background: #FFFFFF;
+	border:1px solid #EAEAEA;
+	margin:0 9px;
+	}
+			
+.vmBrowseProductTitle  a:hover, a:active {
+	color: #808080;
+	}
+	
+.vmCatDesc {
+	float: left;
+	padding-top:10px;
+	}
+
+.vmLearnMore {
+	border:1px solid #DDD;
+	background: #FFFFFF;
+	padding:2px 5px;
+	width: 75px;
+	text-align: center;
+	font-family: arial, helvetica;
+	float: right;
+	font-size:12px;
+	letter-spacing: 0.05em;
+	margin-right: 2px;
+	}
+	
+.vmLearnMore a {
+	color: #666 !important;
+	font-weight: bold !important;
+	}
+
+.vmCatSku {
+	font-size: 11px !important;
+	font-weight: normal !important;
+	line-height: 12px;
+	padding:5px 0;
+	color: #666;
+	margin-top:0px;
+	text-align:left;
+	text-transform: uppercase;
+	}
+
+.vmCatPrice {
+	font-size: 11px;
+	font-weight: bold !important;
+	line-height: 1.2em;
+	background: transparent;
+	padding:3px;
+	margin-top:5px;
+	text-align:center;
+	width:100%;
+	color: #B2000A;
+	}
+
+	
+.v4BrowseProductTitle  a{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #313131 !important;
+	font-size:20px;
+	}
+.v4BrowseProductTitle  a:hover{
+	color: #3399FD !important;
+	display: inline;
+	}
+	
+.v4BrowseContainer {
+	text-align: left;
+	border-bottom:1px solid #DDD;
+	border-top:1px solid #FFF;
+	padding: 10px 3px;
+	margin:0;
+	background: #FAFAFA;
+	}
+.v4BrowseContainer:hover {
+	background: #EFEFEF;
+	}
+	
+.v4BrowseContainer .productPrice{
+	text-align: center;float:left;background: transparent;
+	margin:0 0 2px;padding:0px 3px;color: #111;
+	font:bold 25px helvetica, arial, sans-serif;
+	}
+.v4BrowseContainer .product-amount-saved{
+	text-align: left;float:left;display:none;
+	color:#900; background:transparent;padding:0 3px;
+	}
+.v4BrowseContainer .product-Old-Price{
+	text-align: center;float:left;display:inline;text-decoration: line-through;
+	color:#313131; background:transparent;padding:0 3px;line-height:28px;
+	}
+	
+.v4BrowseImage img{
+	margin:5px;
+	background:transparent;
+	border:1px solid transparent;
+	padding:0px;
+	}
+	
+.v4BrowseContainer:hover .v4BrowseImage img{
+	box-shadow:0px 0px 8px #333;
+	-webkit-box-shadow:0px 0px 8px #333;
+	-moz-box-shadow: 0px 0px 8px #333;
+	}
+
+.v4BrowsePriceBox {
+	float:right;
+	border:1px solid #F5E1B8;
+	background:url(images/light-gradient.png) repeat-x bottom left #FFF;
+	padding:8px 15px;
+	margin:5px 0 10px 0px;
+	}
+.v2BrowsePriceBox {
+	float:right;
+	border:0px solid #F5E1B8;
+	background:transparent;
+	padding:8px 2px;
+	margin:5px 0 10px 0px;
+	}
+	
+.v10BrowseContainer {
+	padding:4px;
+	border-top:4px solid transparent;
+	border-bottom:4px solid transparent;
+	background: transparent;
+	}
+		
+.v10BrowseProductTitle a {
+	color: #3D8FF3 !important;
+	font:bolder 14px/18px Arial, calibri, helvetica, sans-serif !important;
+	margin-top:0px;
+	text-transform: none;	
+	letter-spacing: -0.01em;
+	}
+	
+.v10BrowseProductTitle {
+	width:99%;
+	float:left;
+	text-align:left;
+	}
+
+.v10BrowseImageBox {
+	margin:2px auto;
+	float: left;
+	}
+	
+.v10BrowseDesc {
+	font:normal 12px/16px arial, helvetica, sans-serif;
+	color: #444444;
+	display:block;}
+.vmNotable {
+	height:auto;}
+.vmNotable:hover {}
+	.v2CatPrice { display:inline;float:right;margin:0 10px 0 0;width:auto; }	
+.v10BrowsePriceBox {
+	display:inline;
+	float: left;text-align:left;
+	clear:both;padding:5px;margin:0;
+	background:#F7F7F7;border:1px solid #E7E7E7;}
+.v10BrowsePriceBox a{
+	font:normal 12px/14px arial, helvetica,sans-serif;
+	color:#3D8FF3;}
+.v10BrowsePriceBox a:hover{
+	text-decoration:underline !important;}
+.v10BrowseDiscount {
+	font:bold 14px/16px arial, sans-serif;
+	color: #444;
+	text-decoration: line-through;margin:10px 0;
+	}
+.v10BrowsePrice {
+	font: bold 24px/26px arial, helvetica, sans-serif;
+	color: #2F9144;}

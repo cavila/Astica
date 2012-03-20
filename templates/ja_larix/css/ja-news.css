@@ -1,0 +1,192 @@
+/*------------------------------------------------------------------------
+# JA Larix  for Joomla 1.5 - Version 1.4 - Licence Owner JA130602
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+
+#ja-newswrap {
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+.ja-newsblock {
+	margin: 0;
+	display: block;
+}
+
+.ja-newsitem,
+.ja-newsitem-left,
+.ja-newsitem-right,
+.ja-newsitem-center {
+	float: left;
+	padding: 0;
+	text-align: center;
+}
+
+.ja-newsitem-left,
+.ja-newsitem-center {
+	background: url(../images/v-dot.gif) repeat-y top right;
+}
+
+.ja-newsitem-left div.ja-newsitem-inner,
+.ja-newsitem-center div.ja-newsitem-inner,
+.ja-newsitem-right div.ja-newsitem-inner,
+.ja-newsitem div.ja-newsitem-inner {
+	text-align: left;
+	float: left;
+}
+
+.ja-newsitem-center div.ja-newsitem-inner {
+	float: none;
+	margin: 0 auto;
+}
+
+.ja-newsitem-right div.ja-newsitem-inner {
+	float: right;
+}
+
+.ja-newscat {
+	color: #333333;
+	display: block;
+	font-weight: bold;
+	font-size: 120%;
+	text-decoration: none;
+	margin: 0 0 10px;
+	position: relative;
+	background: url(../images/ci-right.gif) no-repeat top right;
+	text-transform: uppercase;
+	height: 32px;
+	line-height: 32px;
+}
+
+.ja-newscat:hover, .ja-newscat:active, .ja-newscat:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+.ja-newscat span {
+	display: block;
+	font-weight: bold;
+	padding: 0 5px 0 30px;
+	background: url(../images/ci-left.gif) no-repeat top left;
+	color: #403C3A;
+	height: 32px;
+	line-height: 34px;
+}
+
+.ja-newstitle {
+	display: block;
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 5px; 
+}
+
+.ja-newscontent {
+	padding: 0;
+	background: url(stripe1.gif);
+}
+
+.ja-newscontent img {
+	margin: 5px 10px 10px 0;
+	padding: 0;
+}
+
+.ja-newscontent p {
+	margin: 5px 0;
+}
+
+.ja-newsitem ul {
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+ul.ja-newslinks {
+	padding: 0;
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+ul.ja-newslinks a {
+	color: #333333;
+	text-decoration: underline;
+}
+
+/* Sidebar
+--------------------------------------------- */
+div.module-ja-newssb .ja-newsblock {
+	margin: 0 5px 15px;
+}
+
+div.module-ja-newssb ul.ja-newslinks {
+	margin: 0!important;
+}
+
+div.module-ja-newssb ul.ja-newslinks li {
+	padding-left: 22px!important;
+	background-position: 11px 6px!important;
+}
+
+div.module-ja-newssb ul.ja-newslinks li a {
+	color: #403C3A;
+	text-decoration: none;
+}
+
+div.module-ja-newssb ul.ja-newslinks li a:hover,
+div.module-ja-newssb ul.ja-newslinks li a:active,
+div.module-ja-newssb ul.ja-newslinks li a:focus {
+	color: #F85703!important;
+	text-decoration: none;
+}
+
+
+/* Control bar
+--------------------------------------------- */
+.jahl-newscontrol {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	padding: 5px 0;
+	display: block;
+}
+
+.jahl-newscontrol ul {
+	margin: 0 0 0 10px;
+	padding: 0;
+	float: left;
+}
+
+.jahl-newscontrol li {
+	margin: 0;
+	padding: 0;
+	background: none;
+	display: inline;
+}
+
+#loading-indicator {
+	float: left;
+}
+
+#jahl-indicator {
+	float: left;
+	background: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	padding: 1px 5px;
+	font-size: 10px;
+	line-height: normal;
+	margin-left: 5px;
+	display: block;
+}
+
+#ja-newswrap .article_seperator {
+	display: block;
+	background: url(../images/dot.gif) repeat-x center;
+	height: 20px;
+}

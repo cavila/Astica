@@ -116,7 +116,6 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 		<p class="copyright">
 			<a href="http://www.joomla.org" target="_blank">Joomla!</a>
 			<?php echo  JText::_('ISFREESOFTWARE') ?>
-			<br /><a href="http://www.joomlaspanish.org/" target="_blank">Pack creado por Joomla! Spanish 2010</a> - <a href="http://www.webempresa.com/" target="_blank" title="Dise&ntilde;o web">Patrocinado por Web Empresa</a>
 		</p>
 	</div>
 </body>

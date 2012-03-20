@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en_GB"
+      xml:lang="en_GB">
+<head>
+    <title>Custom QuickIcons - Individual Icons/Menus</title>
+    <link href="help.css"
+          rel="stylesheet"
+          type="text/css"
+          media="all" />
+    <meta name="copyright"
+          content="(C) 2006/07/08 www.joomx.com All rights reserved." />
+
+    <meta name="license"
+          content="http://www.joomx.com GNU/GPL" />
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div id="jxbody">
+		<h1 class="jx_h1">Custom QuickIcons - Overview</h1>
+		<div class="jx_close">
+			<a href="http://joomlacode.org/gf/project/joomx/" target="_blank" title="CQI-Project">Latest Version</a>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_tip">
+			CQI exists of 2 parts: this component <strong>and</strong> the module.
+			<br />
+			The module can be published at 2 positions:
+			<ol>
+				<li>icon (replaces the original module quickicons and is standard)</li>
+				<li>cpanel (is then visible with other modules at the right side)</li>
+			</ol>
+			An additional way of publishing is, to copy the module and publish both (at icon and cpanel), but with diferent icons and access levels.
+		</div>
+		<div class="jx_header">Toolbar</div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">Save</span>
+					<br />
+					Save actual projet and go back to overview
+				</li>
+				<li>
+					<span class="li_header">Apply</span>
+					<br />
+					Save actual project but stay in same site
+				</li>
+				<li>
+					<span class="li_header">Cancel</span>
+					<br />
+					Back to previous menu - without saving!
+				</li>
+				<li>
+					<span class="li_header">MediaMgr</span>
+					<br />
+					Upload images with the mediamanager
+				</li>
+				<li>
+					<span class="li_header">Help</span>
+					<br />
+					This document
+				</li>
+			</ul>
+		</div>
+		<div class="jx_header">Menutabs</div>
+		<div class="jx_text">Settings can be defined in following menus:</div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">General</span>
+					<ul>
+						<li>
+							<span class="li_header">Target</span>
+							<br />
+							Define here the target (link) for the menuitem (after index2.php) - will be automatically
+							finished by the system<br />
+							<div class="jx_tip">If external links shall be called only absolute Links are allowed (like: http://www.link.xxx)</div>
+						</li>
+						<li>
+							<span class="li_header">New Window</span>
+							<br />
+							Shall the link be opened in a new window
+						</li>
+						<li>
+							<span class="li_header">Activated</span>
+							<br />
+							Is this menu published?
+						</li>
+						<li>
+							<span class="li_header">Order</span>
+							<br />
+							New menus will be <strong>automatically</strong> at first position (not changeable!).
+							<br />
+							After saving the reordering can be made
+						</li>
+						<li>
+							<span class="li_header">Access</span>
+							<br />
+							Define here which usergroups have access to this menuitem - access levels can be redefinded
+							<div class="jx_tip">Only usergroups with access to the backend are visible.</div>
+							<div class="jx_warning"><span class="jx_warningHeader">Warning:</span>
+							After installing this component, all menuitems have access only for the Superadmin, which
+							means only the menuitems are only visible and clickable for the Superadmin
+							</div>
+						</li>
+						<li>
+							<span class="li_header">User</span>
+							<br />
+							You can define this icon to only one (1) user, it will be usable further only for this user
+							<div class="jx_warning"><span class="jx_warningHeader">Attention:</span>
+							This setting has priority against the group!
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">Text</span>
+					<ul>
+						<li>
+							<span class="li_header">Prefix</span>
+							<br />
+							Each menuitem can be defined with a text prefix (bold, italian, underline, etc.
+						</li>
+						<li>
+							<span class="li_header">Text</span>
+							<br />
+							Text as it will appear within the module. Shorter is better!
+							Additional text can be defined under Title
+						</li>
+						<li>
+							<span class="li_header">Predefined formats for the text</span>
+							<br />
+							<strong>Bold</strong>, <em>Italian</em>, <span style="text-decoration:underline;">Underline</span>
+							<div class="jx_tip">Every combination of valid HTML.tags can be used</div>
+						</li>
+						<li>
+							<span class="li_header">Suffix</span>
+							<br />
+							Final suffix for the text
+							<div class="jx_warning"><span class="jx_warningHeader">Warning:</span>
+							Wrong settings can block the display of the menu item!
+							</div>
+						</li>
+						<li>
+							<span class="li_header">Shortcut</span>
+							<br />
+							For users with disabilities a shortcut (or access key) should be defined.
+							To be used also instead of clicking the menu item with the mouse<br />
+							Shortcuts will be called by the keyboard with ALT + [character]<br />
+							These shortcuts must be unique - avoid to define 2 menus with the same shortcut
+						</li>
+						<li>
+							<span class="li_header">Title</span>
+							<br />
+							Text which will be shown if you hoover over the menuitem
+							You can define additional text with a description to the menuitem - not longer than 60 chars
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">View</span>
+					<ul>
+						<li>
+							<span class="li_header">View as</span>
+							<br />
+							3 settings are possible:
+							<ul>
+								<li>Icon &amp; Text (Standard)</li>
+								<li>Only Icon</li>
+								<li>Only Text</li>
+							</ul>
+						</li>
+						<li>
+							<span class="li_header">Imagefolder</span>
+							<br />
+							Here you can see all image folder found in your CMS as selectable dropdown
+						<li>
+							<span class="li_header">Icon</span>
+							<br />
+							Choose which icon shall be displayed (opens new window)<br />
+							<div class="jx_tip">With the dropdown <strong>Imagefolder</strong> you can choose the directory.
+							<br />
+							<strong>Tip</strong>: use the Mediamanager to create an own directory with your icons</div>
+							<div class="jx_warning"><span class="jx_warningHeader">Attention:</span>
+							If you called the mediamanager to create (and upload new images), you have to call CQI egain from the menu otherwise you will not see the new directory in the dropdown list!
+							</div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_spacer"></div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">Check</span>
+					<ul>
+						<li>
+							<span class="li_header">Check Component</span>
+							<br />
+							If a component is deleted, with this check an error can be avoided.<br />
+							If set to Yes, before the link (icon) is displayed the component will be checked if valid
+							and installed
+						</li>
+						<li>
+							<span class="li_header">Name &amp; Path</span>
+							<br />
+							If previous setting is set to yes, define here the internal path to this component,
+							e.g. customquickicons/admin.custumquickicons.php will be finished by the system to:<br />
+							<em>../administrator/components/com_customquickicons/admin.customquickicons.php</em>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="jx_text">
+			<ul>
+				<li>
+					<span class="li_header">About</span>
+					<br />
+					Some about this component
+				</li>
+			</ul>
+		</div>
+		<div class="jx_docinfo">Doc.Info: v.1.5 - 2008.09.18</div>
+		<div class="jx_close">
+			<a href="javascript:void(0);" onClick="window.close();" title="Close Window">Close Window</a>
+			&nbsp;|&nbsp;
+			<a href="http://joomlacode.org/gf/project/joomx/" target="_blank" title="CQI-Project">Latest Version</a>
+		</div>
+	</div>
+</body>
+</html>

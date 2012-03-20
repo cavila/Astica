@@ -4,7 +4,7 @@ class JConfig {
 var $offline = '0';
 var $offline_message = 'El sitio está desactivado por tareas de mantenimiento <br /> Por favor, vuelva más tarde.';
 var $sitename = 'Astica';
-var $editor = 'tinymce';
+var $editor = 'jce';
 var $list_limit = '20';
 var $legacy = '0';
 /* Debug Settings */
@@ -19,7 +19,7 @@ var $db = 'astica';
 var $dbprefix = 'jos_';
 /* Server Settings */
 var $live_site = '';
-var $secret = '9GnfiHJtTwYMKRUJ';
+var $secret = 'Pv909uFvPCCBYenA';
 var $gzip = '0';
 var $error_reporting = '-1';
 var $helpurl = 'http://help.joomla.org';

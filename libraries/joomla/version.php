@@ -1,6 +1,6 @@
 <?php
 /**
- * @version		$Id: version.php 22381 2011-11-14 01:18:53Z dextercowley $
+ * @version		$Id: version.php 21080 2011-04-04 22:01:17Z dextercowley $
  * @package	Joomla.Framework
  * @copyright	Copyright (C) 2005 - 2010 Open Source Matters. All rights reserved.
  * @license		GNU/GPL, see LICENSE.php
@@ -26,13 +26,13 @@ class JVersion
 	/** @var string Development Status */
 	var $DEV_STATUS = 'Stable';
 	/** @var int Sub Release Level */
-	var $DEV_LEVEL 	= '25';
+	var $DEV_LEVEL 	= '23';
 	/** @var int build Number */
 	var $BUILD	= '';
 	/** @var string Codename */
-	var $CODENAME 	= 'senu takaa ama mamni';
+	var $CODENAME 	= 'senu takaa ama baji (VirtueMart eCommerce Bundle)';
 	/** @var string Date */
-	var $RELDATE 	= '14-November-2011';
+	var $RELDATE 	= '04-March-2011';
 	/** @var string Time */
 	var $RELTIME 	= '18:00';
 	/** @var string Timezone */

@@ -1,0 +1,124 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.vmTabContent {
+	border:0px solid #636466;
+	border-top:0 solid transparent;
+	width:100%;
+	margin-bottom: 1em;
+	padding: 0px;
+	background:transparent;
+	}
+
+.vmTabContentInner {
+	padding: 0;
+	width:95%;
+	margin: 3px auto;
+	}
+	
+.vmTabSub {
+	border-bottom:1px solid #BBB;
+	border-top:1px solid #BBB;
+	width:100%;
+	padding: 0px;
+	background:#FBFBFB;
+	margin: 0 auto 1em; 
+	
+	}	
+	
+.vmTabSubInner {
+	width:95%;
+	padding: 6px;
+	margin: 0; 
+	}
+	
+#vmtabs{
+padding: 3px 0;
+margin-left: 0 !important;
+margin-top: 0;
+margin-bottom: 0;
+font: bold 13px Arial;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+ul#vmtabs {
+	list-style-image: none;
+	padding-left: 0px;
+	background: transparent;
+	}
+
+#vmtabs li{
+display: inline;
+margin: 0;
+}
+
+
+ul#vmtabs {
+	height: 30px;
+	padding: 0px 10px 0 0px;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	background: #F2F2F2;
+}
+
+ul#vmtabs li {
+	float: left;
+	margin: 0 10px 0 0;
+	background-color: #2B477D;
+	border: solid 0px #313131;
+	position: relative;
+	z-index: 1;
+}
+
+ul#vmtabs li.selected {
+	z-index: 3;
+}
+
+ul#vmtabs li a:link, ul#vmtabs li a:visited {
+	text-align: center;
+	line-height: 30px;
+	padding: 0 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	color: #313131;
+	letter-spacing: 0.5px;
+	outline: none;
+	float: left;
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	background-color: #F2F2F2;
+}
+
+ul#vmtabs li a:hover {
+	background-color: #5a87dd;
+	color: #FFFFFF;
+}
+
+ul#vmtabs li.selected a:link, ul#vmtabs li.selected a:visited {
+	color: #FFF;
+	-webkit-transition: background-color 0.2s linear;
+	background-color: #2B477D;
+	z-index: 3;
+}
+
+.tabcontentstyle{ /*style of tab content oontainer*/
+border: 1px solid gray;
+width: 450px;
+margin-bottom: 1em;
+padding: 10px;
+}
+
+.tabcontent{
+display:none;
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+}
+}

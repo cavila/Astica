@@ -1,0 +1,48 @@
+<install type="component" version="1.5.0" method="upgrade">
+	<name>Moneybookers</name>
+	<author>Soeren E.-Biermann</author>
+	<creationDate>20.April 2011</creationDate>
+	<copyright>(C) 2010-2011 Moneybookers. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>ryandemmer@gmail.com</authorEmail>
+	<authorUrl>www.moneybookers.com</authorUrl>
+	<version>1.2</version>
+    <description>Moneybookers Payment Module Configurator for VirtueMart</description>
+	<installfile>install.php</installfile>
+  	<uninstallfile>install.php</uninstallfile>
+    <administration>
+        <menu img="components/com_moneybookers/images/pay_moneybookers.jpg" link="option=com_moneybookers">MoneyBookers</menu>
+		
+		<files>
+		
+		<file>classes/payment/ps_moneybookers.php</file>
+		<file>classes/payment/ps_moneybookers.cfg.php</file>
+		<file>html/checkout.resultmb.php</file>
+		<file>notifymb.php</file>
+		
+		<file>admin.moneybookers.php</file>
+		<file>functions.moneybookers.php</file>
+		<file>Payment Extra Info-CartaSi.txt</file>
+		<file>Payment Extra Info-Carte Bleue.txt</file>
+		<file>Payment Extra Info-Credit Cards.txt</file>
+		<file>Payment Extra Info-eWallet.txt</file>
+		<file>Payment Extra Info-Giropay.txt</file>
+		<file>Payment Extra Info-iDeal.txt</file>
+		<file>Payment Extra Info-Lastschrift.txt</file>
+		<file>Payment Extra Info-Maestro.txt</file>
+		<file>Payment Extra Info-Netpay.txt</file>
+		<file>Payment Extra Info-OBT.txt</file>
+		<file>Payment Extra Info-P24.txt</file>
+		<file>Payment Extra Info-PostePay.txt</file>
+		<file>Payment Extra Info-Sofortueberweisung.txt</file>
+		<file>images/edit_add.png</file>
+		<file>images/mb-logo.gif</file>
+		<file>images/mb-logo.png</file>
+		<file>images/pay_moneybookers.jpg</file>
+		<file>images/pay_moneybookers_larger.jpg</file>
+		<file>index.html</file>
+		<file>install.php</file>
+		<file>languages/english.php</file>
+	</files>
+    </administration>
+</install>

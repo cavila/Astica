@@ -1,0 +1,97 @@
+/*------------------------------------------------------------------------
+# JA Larix  for Joomla 1.5 - Version 1.4 - Licence Owner JA130602
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+#jasdl-mainnav ul, #jasdl-subnav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#jasdl-mainnav ul li, #jasdl-subnav ul li {
+	margin: 0;
+	padding: 0;
+	display:inline;
+	background: none;
+}
+
+#jasdl-mainnav a {
+	float: left;
+	padding: 10px 30px;
+	display: block;
+	color: #C8C8C8;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right;
+	font-weight: bold;
+	font-size: 135%;
+	line-height: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#jasdl-mainnav a:hover,
+#jasdl-mainnav ul li.hover a {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #636160;
+}
+
+#jasdl-mainnav li.active a,
+#jasdl-mainnav li.active a:hover,
+#jasdl-mainnav li.active a:active,
+#jasdl-mainnav li.active a:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #23211F;
+}
+
+#jasdl-mainnav ul li.havechild {
+}
+
+#jasdl-mainnav ul li.havechild-active {
+}
+
+#jasdl-subnav {
+	line-height: normal;
+}
+
+#jasdl-subnav a {
+	padding: 0 20px;
+	float: left;
+	display: block;
+	color: #636160;
+	background: url(../../images/v-dot.gif) repeat-y top right;
+	text-decoration: none;
+}
+
+#jasdl-subnav a:hover,
+#jasdl-subnav a:active,
+#jasdl-subnav a:focus {
+	text-decoration: none;
+	color: #23211F;
+}
+
+#jasdl-subnav ul {
+	display: none;
+}
+
+#jasdl-subnav ul li {
+	display: inline;
+	line-height: normal;
+	padding: 0;
+	margin: 0;
+}
+
+#jasdl-subnav ul li.active a,
+#jasdl-subnav ul li.active a:hover,
+#jasdl-subnav ul li.active a:focus {
+	color: #21211F;
+	font-weight: bold;
+}
+
+#jasdl-subnav ul li.spacer {
+	visibility: hidden;
+}

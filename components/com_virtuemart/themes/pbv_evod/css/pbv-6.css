@@ -1,0 +1,7 @@
+#vmMainPage .addtocart_button, #vmMainPage .addtocart_button_module  {
+	border: 0;
+	padding:0;
+	background: url(../images/style6/btn_add-to-cart.png) no-repeat scroll left top transparent;
+	width:259px;
+	height:89px;
+	}

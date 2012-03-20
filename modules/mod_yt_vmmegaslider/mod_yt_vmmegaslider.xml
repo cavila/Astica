@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+    <name>Yt Virtuemart Mega Slider</name>
+    <creationDate>June 2011</creationDate>
+    <author>YouTech Company</author>
+    <copyright>(C) 2011 YouTech Company</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authorEmail>contact@ytcvn.com</authorEmail>
+    <authorUrl>http://www.ytcvn.com</authorUrl>
+    <version>1.0</version>
+    <description>YT_VM_MEGA_SLIDER_DESC</description>
+    <files>
+         <filename module="mod_yt_vmmegaslider">mod_yt_vmmegaslider.php</filename>
+         <filename module="mod_yt_vmmegaslider">mod_yt_vmmegaslider.xml</filename>
+         <filename module="mod_yt_vmmegaslider">index.html</filename>
+         <filename module="mod_yt_vmmegaslider">helper.php</filename>         
+         <folder module="mod_yt_vmmegaslider">assets</folder>
+         <folder module="mod_yt_vmmegaslider">tmpl</folder>
+         <folder module="mod_yt_vmmegaslider">libs</folder>
+         <folder module="mod_yt_vmmegaslider">elements</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yt_vmmegaslider.ini</language>
+	</languages>	   
+   <params addpath="/modules/mod_yt_vmmegaslider/elements">   		
+		<param name="@spacer1" type="spacer" default="&lt;div style=&quot;font-family:arial;font-size:15px;color:#fff; text-shadow:1px 1px 1px #333;padding:7px;margin:0;background:#0D9FC4;&quot;&gt;General Settings&lt;/div&gt;" />
+
+   		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+   		<!-- Group 1: Article Filter -->
+		<param name="vmcategory" type="vmcategory" default="0" label="Select Categories" description="Please categories for your module" />
+		<param name="featured" type="list" default="2" label="For Special Products" description="For Special Products">
+          <option value="0">Hide Special Products</option>
+          <option value="1">Show Special Products only</option>
+          <option value="2">Include Special Products</option>
+        </param>
+		
+   		<param name="sort_order_field" type="list" default="cdate" label="Sort Order By" description="SORT ORDER BY FIELD">
+			<option value="cdate">Recently Added First</option>
+			<option value="mdate">Recently Modified First</option>
+			<option value="bestseller">Best Seller</option>						
+			<option value="worstseller">Worst Seller</option>
+			<option value="product_price_high">High Price </option>
+            <option value="product_price_low">Low Price </option>
+			<option value="product_name">Product Name</option>						
+			<option value="random">Random</option>
+		</param>
+        <param name="width_module_mega" type="text" default="800" label="Module Width" description="Set width for module. Unit is 'px'" />				
+		<param name="total" type="text" default="15" label="The Amount of Articles" description="The amount of articles which you want to show in the module" />
+        <param name="num_item_per_page" type="text" default="4" label="Item Number Per Page" description="Number Item Per Page which you want to show in the once page" />
+		<param name="auto_play" type="list" default="1" label="Auto play" description="Set for slideshow auto play or not.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>			
+		</param>
+        <param name="position_image_display" type="list" default="left" label="Position Display Image" description="Position Display Image">
+          <option value="left">Left</option>
+          <option value="right">Right</option>
+        </param>
+        <param name="nav_style_mega" type="list" default="nav_style03" label="Style Navigation" description="Style Navigation">
+          <option value="nav_style01">Style 01</option>
+          <option value="nav_style02">Style 02</option>
+          <option value="nav_style03">Style 03</option>
+        </param>
+        <param name="width_opacity" type="text" default="250" label="Width For Opacity" description="Width For Opacity. Only Use For Theme 2" />
+		<param name="showhidenavigation" type="list" default="show_nav" label="Navigation Show" description="Show/Hide Navigation">
+			<option value="show_nav">Show</option>
+			<option value="hide_nav">Hide</option>
+		</param>
+        <!-- Group 2: For title and link -->
+		<param name="@spacer2" type="spacer" default="&lt;div style=&quot;font-family:arial;font-size:15px;color:#fff; text-shadow:1px 1px 1px #333;padding:7px;margin:0;background:#0D9FC4;&quot;&gt;Title Options and Link Options&lt;/div&gt;" />
+		<param name="limit_normal_title" type="text" default="25" label="Max Length of Normal Title" description="Max length of Normal title" />
+        <param name="limit_main_title" type="text" default="250" label="Max Length of Main Title" description="Max length of Main title" />
+		<param name="target" type="list" default="_self" label="Open Link" description="The Type shows when you click on the link">
+			<option value="_blank">New Window</option>
+			<option value="_self">Same Window</option>					
+			<option value="pop-up">Pop-Up</option>					
+		</param>
+        <param name="show_price" type="list" default="display" label="Show Price" description="Show/Hide Price">
+			<option value="yes">Yes</option>
+            <option value="no">No</option>
+		</param>
+		<param name="showmaincontent" type="list" default="yes" label="Show Main Content Spotlight" description="Show Main Content Spotlight: Only Use for Theme 2">
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </param>
+		<param name="showmaindesc" type="list" default="yes" label="Show Main Description" description="Show Caption">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>			
+		</param>
+		
+		<param name="link_image" type="list" default="0" label="Link for image" description="Link for image">
+			<option value="1">Yes</option>
+			<option value="0">No</option>			
+		</param>
+        <param name="shownormaldesc" type="list" default="yes" label="Show Normal Description" description="Show Normal Description">			
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <param name="showmaintitle" type="list" default="yes" label="Show Main Title" description="Show Normal Title">			
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>
+        <param name="shownormaltitle" type="list" default="1" label="Show Normal Title" description="Show Normal Title">			
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </param>		
+        <param name="showreadmore" type="list" default="yes" label="Show Read More" description="Show Read More Text">			
+            <option value="yes">Yes</option>			
+            <option value="no">No</option>					
+        </param>
+        <param name="show_buttons_mega" type="list" default="display" label="Show Buttons" description="Show Buttons">
+			<option value="display">Display</option>
+            <option value="hover">Hover</option>
+			<option value="hide">Hide</option>
+		</param>
+        <param name="stylereadmore" type="radio" default="style3" label="Select Style Read more option" description="Only Use for Theme 1 and Theme 4">
+          <option value="style1">Style 1</option>
+          <option value="style2">Style 2</option>          
+          <option value="style3">Style 3</option>          
+          <option value="style4">Style 4</option>          
+        </param>
+        <param name="readmore_mega_text" type="text" default="Readmore" label="Read More Text" description="Read More Text" />
+		<param name="limit_normal_description" type="text" default="120" label="Max Length of Normal Description" description="Max length of Nomal Description" />		
+        <param name="limit_main_description" type="text" default="250" label="Max Length of Main Description" description="Max length of Main Description" />		
+        <param name="cutStr_style" type="list" default="removing" label="Cutting Description With" description="Style Cut String: Only use for Main Description">
+    		<option value="removing">Removing HTML code</option>
+    		<option value="keeping">Keeping HTML code</option>
+		</param>
+        <param name="customUrl" type="textarea" cols="35" rows="5" default="" label="Custom URL"  description="Custom url of items. This only supports  Item Ids Type. Syntax: &lt;br/&gt; id1:url1 &lt;br/&gt; id2:url2 &lt;br/&gt; ..." />
+        <param name="@spacer3" type="spacer" default="&lt;div style=&quot;font-family:arial;font-size:15px;color:#fff; text-shadow:1px 1px 1px #333;padding:7px;margin:0;background:#0D9FC4;&quot;&gt;Image Options&lt;/div&gt;" />
+		<!-- Group 3: For Images -->
+        <param name="shownormalimage" type="list" default="yes" label="Show Normal Image" description="Show Normal Image: Only use for theme have Style Navigation = Style 02">			
+            <option value="yes">Yes</option>			
+            <option value="no">No</option>					
+        </param>
+        <param name="thumb_width" type="text" default="800" label="Large Thumbnail Width" description="The width of thumbnail image. The module will auto resize your image to your width" />
+		<param name="thumb_height" type="text" default="400" label="Large Thumbnail Height" description="The height of thumbnail image. The module will auto resize your image to your height" />
+		<param name="small_thumb_width" type="text" default="172" label="Small Thumbnail Width" description="The width of thumbnail image. The module will auto resize your image to your width" />
+		<param name="small_thumb_height" type="text" default="60" label="Small Thumbnail Height" description="The height of thumbnail image. The module will auto resize your image to your height" />
+		
+        
+        <param name="imagesource" type="list" default="no" label="Using Image Source" description="Using Image Source">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</param>
+		<param name="cropresizeimage" type="list" default="0" label="Thumbnail Mode Type" description="Thumbnail Mode Type">
+			<option value="0">Using Resize</option>
+			<option value="1">Using Crop</option>
+		</param>
+        
+        <param name="@spacer6" type="spacer" default="&lt;div style=&quot;font-family:arial;font-size:15px;color:#fff; text-shadow:1px 1px 1px #333;padding:7px;margin:0;background:#0D9FC4;&quot;&gt;Theme and Effect Options &lt;/div&gt;" />
+		<!-- Group 5: Themes and layouts -->
+		<param name="theme" type="list" default="theme1" label="Select a theme" description="Please select a theme for the module">
+			<option value="theme1">Theme 1</option>
+			<option value="theme2">Theme 2</option>
+            <option value="theme3">Theme 3</option>
+			<option value="theme4">Theme 4</option>			
+		</param>
+		<param name="effect" type="list" default="default" label="Select an Effect" description="Please select an Effect for the module">
+			<option value="fade">Fade</option>
+			<option value="fadeZoom">Fade Zoom</option>
+			<option value="zoom">Zoom</option>
+			<option value="shuffle">Shuffle</option>
+			<option value="toss">Toss</option>
+			<option value="wipe">Wipe</option>
+			<option value="cover">Cover</option>
+			<option value="uncover">Uncover</option>
+			<option value="blindX">Blind X</option>
+			<option value="blindY">Blind Y</option>
+			<option value="blindZ">Blind Z</option>
+			<option value="growY">Grow Y</option>
+			<option value="curtainX">Curtain X</option>
+			<option value="curtainY">Curtain Y</option>
+			<option value="slideX">Slide X</option>
+			<option value="slideY">Slide Y</option>
+			<option value="turnUp">Turn Up</option>
+			<option value="turnDown">Turn Down</option>
+			<option value="turnLeft">Turn Left</option>
+			<option value="turnRight">Turn Right</option>
+			<option value="scrollRight">Scroll Right</option>
+			<option value="scrollLeft">Scroll Left</option>
+			<option value="scrollUp">Scroll Up</option>
+			<option value="scrollDown">Scroll Down</option>
+			<option value="all">Random</option>
+		</param>
+		<param name="play" type="list" default="1" label="Stop when hover" description="Stop when hover">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+        <param name="shownumbutton" type="list" default="show" label="Hide/Show Button Number" description="Hide/Show Button Number: only Use for Theme 3">			
+            <option value="show">Show</option>			
+            <option value="hide">Hide</option>					
+        </param>
+		<param name="slideshow_speed" type="text" default="800" label="Animation Duration" description="Speed of slideshow. Larger = Slower" />		
+		<param name="timer_speed" type="text" default="4000" label="Interval" description="Speed of Timer. Larger = Slower" />
+		<param name="maintitlecolor" type="text" default="#545454" label="Main Title Color" description="Please enter a color for the Main Title . Example: #545454" />
+        <param name="maindesccolor" type="text" default="#000000" label="Main Description Color" description="Please enter a color for the description. Example: #FFFFFF" />
+        <param name="bgmainitem" type="text" default="#E5F3FB" label="Main Item Background" description="Main Item Background. Only Use for Theme 2. Example: #E5F3FB" />
+        <param name="bg_navication" type="text" default="#E4E4E4" label="Navigation Background" description="Navigation Background. Example: #E4E4E4" />
+        <param name="bg_item_nav" type="text" default="#FF8880" label="Navigation Item Actived Background" description="Navigation Item Actived Background. Example: #FF8880" />
+        <param name="coloritemnav" type="text" default="#000000" label="Navigation Title Color" description="Navigation Title Color. Example: #000000" />
+        <param name="colorcontentnav" type="text" default="#000000" label="Navigation Content Color" description="Navigation Content Color. Example: #FFFFFF" />
+		<param name="intro" type="textarea" cols="35" rows="5" default="" label="Intro text" description=""/>		
+		<param name="note" type="textarea" cols="35" rows="5" default="" label="Footer text" description=""/>
+		
+   </params>
+   
+   <params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Caching">
+			<option value="1">Use Cache</option>
+			<option value="0">Do not use Cache</option>
+		</param>
+		<param name="jquery" type="radio" default="1" label="Include jQuery Library" description="Include jQuery Library">
+			<option value="1">Yes</option>
+			<option value="0">No</option>						
+        </param>
+		<param name="cache_time" type="text" default="300" label="Cache time" description="Cache time" />		
+	</params>
+</install>
+

@@ -1,0 +1,34 @@
+.addtocart_button , .addtocart_button_module  {
+	background: #F7F7F7 url(../images/button-large.png) repeat-x !important ;
+	display: inline-block !important ;
+	color: #515151 !important ;
+	text-decoration: none !important ;
+	font-weight: bold !important ;
+	line-height: 1 !important ;
+	font-family: arial !important ;
+	-moz-border-radius: 5px !important ;
+	-webkit-border-radius: 5px !important ;
+	text-shadow: 0 1px 1px #FFF !important ;
+	border: 1px solid #999 !important ;
+	position: relative !important ;
+	cursor: pointer !important ;
+	font-size: 14px !important ;
+	padding: 6px 10px !important ;
+	margin: 10px 3px !important ;
+	height: auto !important ;
+	width: auto !important ;
+	letter-spacing: 0em !important ;
+	-webkit-transition: background-color 0.3s linear !important ;
+	-moz-transition: background-color 0.3s linear !important ;
+	-o-transition: background-color 0.3s linear !important ;
+	}
+	
+.addtocart_button:hover, .addtocart_button_module:hover  {
+	background: #5FA1F1 url(../images/button_large-hover.png) repeat-x center left !important ;
+	border:1px solid #4381CD !important ;
+	color: #FFF !important ;
+	text-shadow: 0 1px 1px #717171 !important ;
+	-webkit-transition: background-color 0.3s linear !important ;
+	-moz-transition: background-color 0.3s linear !important ;
+	-o-transition: background-color 0.3s linear !important ;
+	}

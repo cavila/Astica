@@ -1,0 +1,98 @@
+/*------------------------------------------------------------------------
+# JA Larix  for Joomla 1.5 - Version 1.4 - Licence Owner JA130602
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+#ja-splitmenu {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-splitmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#ja-splitmenu li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+#ja-splitmenu a {
+	float: left;
+	padding: 10px 30px;
+	display: block;
+	color: #C8C8C8;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right;
+	font-weight: bold;
+	font-size: 135%;
+	line-height: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #636160;
+}
+
+#ja-splitmenu li.active a,
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #23211F;
+}
+
+/* SUB NAVIGATION
+--------------------------------------------------------- */
+#ja-subnavcol {
+	clear: both;
+	overflow: hidden;
+}
+
+#ja-subnavcol ul {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#ja-subnavcol li {
+	padding: 0 !important;
+	margin: 0 !important;
+	background: none !important;
+}
+
+#ja-subnavcol li a {
+	padding: 5px 0 4px 15px;
+	width: 90%;
+	display: block;
+	color: #C8C8C8;
+	background: url(../../images/a-mainlevel-bg.gif) no-repeat bottom left;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#ja-subnavcol li a:hover,
+#ja-subnavcol li a:active,
+#ja-subnavcol li a:focus {
+	color: #FFFFFF;
+	background: url(../images/a-mainlevel-hover.gif) no-repeat bottom left;
+	text-decoration: none;
+}
+
+#ja-subnavcol li a.active,
+#ja-subnavcol li a.active:hover,
+#ja-subnavcol li a.active:active,
+#ja-subnavcol li a.active:focus {
+	color: #EE9600;
+	background: url(../images/a-mainlevel-hover.gif) no-repeat bottom left;
+}

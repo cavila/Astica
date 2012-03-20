@@ -1,0 +1,25 @@
+.addtocart_button:hover, .addtocart_button_module:hover {
+	background: #A2C277;
+	border:3px solid #84A45A !important;
+	color: #FFFFFF;
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	}
+	
+.addtocart_button, .addtocart_button_module  {
+	background: #FCFCFC;
+	border:3px solid #EAEAEA !important;
+	padding:4px 5px;
+	line-height: 1.5em;
+	color: #515151;
+	font-size:14px;
+	text-transform: uppercase;
+	font-family: helvetica;
+	font-weight:bold;
+	width:auto;
+	height: auto;
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	}

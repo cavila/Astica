@@ -26,14 +26,14 @@
 		<position>debug</position>
 	</positions>
 	<params>
-		<param name="useRoundedCorners" type="radio" default="1" label="Usar esquinas redondeadas" description="Activar/desactivar el efecto de esquinas redondeadas">
+		<param name="useRoundedCorners" type="radio" default="1" label="Use Rounded Corners" description="Enable/Disable Rounded Corner Effect">
 			<option value="0">No</option>
-			<option value="1">Si</option>
+			<option value="1">Yes</option>
 		</param>
-		<param name="showSiteName" type="radio" default="0" label="Mostrar el nombre del sitio" description="Mostrar el nombre del sitio en el header de la plantilla">
+		<param name="showSiteName" type="radio" default="0" label="Show Site Name" description="Show the site name in the template header">
 			<option value="0">No</option>
-			<option value="1">Si</option>
+			<option value="1">Yes</option>
 		</param>
-		<param name="headerColor" type="folderlist" default="h_green" directory="administrator/templates/khepri/images" filter="^h_." hide_none="1" hide_default="1" label="Color del Header" description="El color de la barra de debajo del header" />
+		<param name="headerColor" type="folderlist" default="h_green" directory="administrator/templates/khepri/images" filter="^h_." hide_none="1" hide_default="1" label="Header Color" description="The color of the bar under the header" />
 	</params>
 </install>

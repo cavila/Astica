@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>JA News</name>
+	<author>Le Hoai</author>
+	<creationDate>Jan 2007</creationDate>
+	<copyright>(C) 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@joomlart.com , schoai@gmail.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.1.1</version>
+	<description>
+		<![CDATA[
+		Version:<br />
+		<h2>JA News 1.1.2</h2><br />
+		Features:<br />
+		- Support ALL charsets if iconv library are enabled.<br />
+		- Support ISO-8859-1, ISO-8859-15, UTF-8, CP866, CP1251, CP1252, KOI8-R, BIG5, GB2312, BIG5-HKSCS, SHIFT_JIS, EUC-JP if iconv is not supported.<br />
+		]]>
+	</description>
+	<files>
+		<filename module="mod_janews">mod_janews.php</filename>
+		<filename module="mod_janews">helper.php</filename>
+		<filename module="mod_janews">ja_news/headlineloader.php</filename>
+		<filename module="mod_janews">ja_news/janews.js</filename>
+		<filename module="mod_janews">ja_news/ja-news.css</filename>
+		<filename module="mod_janews">ja_news/loading.gif</filename>
+		<filename module="mod_janews">ja_news/pause.png</filename>
+		<filename module="mod_janews">ja_news/play.png</filename>
+		<filename module="mod_janews">ja_news/next.png</filename>
+		<filename module="mod_janews">ja_news/prev.png</filename>
+		<filename module="mod_janews">ja_news/bullet-title.gif</filename>
+		<filename module="mod_janews">ja_news/bullet-list.gif</filename>
+		<filename module="mod_janews">ja_news/grad1.gif</filename>
+		<filename module="mod_janews">ja_news/v-seperator.gif</filename>
+		<filename module="mod_janews">ja_news/seperator.gif</filename>
+		<filename module="mod_janews">ja_news/stripe1.gif</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		
+		<param name="showheadline" type="radio" default="1" label="Show Headline" description="Show the top news above all other categories">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>		
+		<param name="headlinelang" type="text" default="Headline" label="Headline Text" description="Headline's text" />
+		<param name="numberofheadlinenews" type="text" default="10" label="Number of Headline news" description="Number of news showed in headline" />
+		<param name="headlineheight" type="text" default="220" label="Headline Fixed Height" description="Fixed height of headline, in pixels. Use 0 if you want the headline has flexible height." />
+		<param name="autoroll" type="radio" default="1" label="Auto Roll" description="Rolls the headline news">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="delaytime" type="text" default="5" label="Rolling delay time" description="Time between two articles, in seconds" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		
+		<param name="catid" type="text" default="" label="Category ID" description="Selects items from a specific Category or set of Categories (to specify more than one Category, seperate with a comma , )." />
+		<param name="linkitems" type="text" default="3" label="Link Items" description="Number of link items." />
+		<param name="maxchars" type="text" default="0" label="Max Chars" description="Maximum number character display" />
+		<param name="width" type="text" default="100" label="Image Width" description="Fixed width of the image in pixel (set to -1 if you want to leave the image's default size" />
+		<param name="height" type="text" default="100" label="Image Height" description="Fixed height of the image in pixel (set to -1 if you want to leave the image's default size" />
+
+		<param name="cols" type="text" default="2" label="Columns" description="How many columns per row (Set to zero if you want to disable other news items)" />
+		
+		<param name="showintro" type="radio" default="1" label="Show Intro" description="Show the introtext of the latest news">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="showimage" type="radio" default="1" label="Show image" description="Show/Hide image">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="autoresize" type="radio" default="1" label="Auto resize" description="Auto resize image?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="align" type="radio" default="left" label="Image Align" description="Set align of images.">
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+	</params>
+</install>

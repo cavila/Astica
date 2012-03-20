@@ -1,0 +1,224 @@
+/*------------------------------------------------------------------------
+# JA Larix  for Joomla 1.5 - Version 1.4 - Licence Owner JA130602
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+
+/* this is the clipping region for the menu. it's width and height get set by script, depending on the size of the items table */
+.transMenu {
+	position: absolute;
+	overflow: hidden;
+	left: -1000px;
+	top: -1000px;
+}
+
+/* this is the main container for the menu itself. it's width and height get set by script, depending on the size of the items table */
+.transMenu .content {
+	position: absolute;
+}
+
+/* this table comprises all menu items. each TR is one item. It is relatively positioned so that the shadow and background transparent divs can be positioned underneath it */
+.transMenu .items {
+	position: relative;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+
+.transMenu.top .items {
+}
+
+/* this DIV is the semi-transparent white background of each menu. the -moz-opacity is a proprietary way to get transparency in mozilla, the filter is for IE/windows 5.0+. */
+/* we set the background color in script because ie mac does not use it; that browser only uses a semi-transparent white PNG that the spacer gif inside this DIV is replaced by */
+.transMenu .background {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1;
+	-moz-opacity: .9;
+	filter: alpha(opacity=90);
+}
+
+/* same concept as .background, but this is the sliver of shadow on the right of the menu. It's left, height, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowRight {
+	width: 2px;
+	position: absolute;
+	z-index: 3;
+	top: 3px;
+	-moz-opacity: .4;
+	filter: alpha(opacity=40);
+}
+
+/* same concept as .background, but this is the sliver of shadow on the bottom of the menu. It's top, width, and background are set by script. In IE5/mac, it uses a PNG */
+.transMenu .shadowBottom {
+	position: absolute;
+	z-index: 1;
+	left: 3px;
+	height: 2px;
+	-moz-opacity: .4;
+	filter: alpha(opacity=40);
+}
+
+/* each TR.item is one menu item */
+.transMenu .item {
+	color: #C8C8C8;
+	text-transform: none;
+	text-align: left;
+	/* this is a hack for mac/ie5, whom incorrectly cascades the border properties of the parent table to each row */
+	border: none;
+	cursor: pointer;
+	font-size: 100%;
+	font-family: Tahoma, Arial, sans-serif;
+}
+
+/* this is the class that is used when the mouse is over an item. script sets the row to this class when required. */
+.transMenu .item.hover {
+	color: #FFFFFF;
+	background: #636160;
+	margin-right: 20px;
+}
+
+/* this is either the dingbat that indicates there is a submenu, or a spacer gif in it's place. We give it extra margin to create some space between the text and the dingbat */
+.transMenu .item img {
+	margin-left: 10px;
+}
+
+/* ----------------------------------------------------------------
+- Added classes by Khanh - 050629
+- Style and mark-up improved by Hieu Nguyen & Ha Le Viet - 060718
+-------------------------------------------------------------------*/
+.transMenu .item#active {
+	color: #FFFFFF;
+	font-weight: bold;
+	background: #EE9600;
+	/* -moz-opacity: .6;
+	filter: alpha(opacity=60); */
+}
+
+.transMenu .item#active:hover {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/* For first level menu.*/
+#ja-transmenu {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-transmenu li {
+	margin: 0;
+	padding: 0;
+	background: none;
+	display: inline;
+}
+
+#ja-transmenu li a { /* common styles for 1st level menu */
+	float: left;
+	padding: 10px 30px;
+	display: block;
+	color: #C8C8C8;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right;
+	font-weight: bold;
+	font-size: 135%;
+	line-height: normal;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#ja-transmenu a.havechild-mainlevel-trans {
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right;
+}
+
+#ja-transmenu a.havechild-mainlevel-trans:hover,
+#ja-transmenu a.havechild-mainlevel-trans:active,
+#ja-transmenu a.havechild-mainlevel-trans:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #636160;
+}
+
+#ja-transmenu a.havechild-mainlevel-active-trans {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #23211F;
+}
+
+#ja-transmenu a.havechild-mainlevel-active-trans:hover,
+#ja-transmenu a.havechild-mainlevel-active-trans:active,
+#ja-transmenu a.havechild-mainlevel-active-trans:focus {
+}
+
+#ja-transmenu a.jahover, #ja-transmenu a.jahover span {
+	text-decoration: none;
+}
+
+#ja-transmenu a.jahover-active {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #23211F;
+}
+
+a.mainlevel-trans {
+}
+
+#ja-transmenu a.mainlevel-trans:hover,
+#ja-transmenu a.mainlevel-trans:active,
+#ja-transmenu a.mainlevel-trans:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #636160;
+}
+
+#ja-transmenu a.mainlevel-active-trans,
+#ja-transmenu a.mainlevel-active-trans:hover,
+#ja-transmenu a.mainlevel-active-trans:active,
+#ja-transmenu a.mainlevel-active-trans:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #23211F;
+}
+
+/* First item */
+#ja-transmenu a.havechild-mainlevel-trans-first,
+#ja-transmenu a.mainlevel-trans-first {
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right;
+}
+
+#ja-transmenu a.havechild-mainlevel-trans-first:hover,
+#ja-transmenu a.havechild-mainlevel-trans-first:active,
+#ja-transmenu a.havechild-mainlevel-trans-first:focus,
+#ja-transmenu a.mainlevel-trans-first:hover,
+#ja-transmenu a.mainlevel-trans-first:active,
+#ja-transmenu a.mainlevel-trans-first:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #636160;
+}
+
+#ja-transmenu a.havechild-mainlevel-active-trans-first,
+#ja-transmenu a.mainlevel-active-trans-first {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #23211F;
+}
+
+/* last item */
+#ja-transmenu a.havechild-mainlevel-trans-last,
+#ja-transmenu a.mainlevel-trans-last {
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right;
+}
+
+#ja-transmenu a.havechild-mainlevel-trans-last:hover,
+#ja-transmenu a.havechild-mainlevel-trans-last:active,
+#ja-transmenu a.havechild-mainlevel-trans-last:focus,
+#ja-transmenu a.mainlevel-trans-last:hover,
+#ja-transmenu a.mainlevel-trans-last:active,
+#ja-transmenu a.mainlevel-trans-last:focus {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #636160;
+}
+
+#ja-transmenu a.havechild-mainlevel-active-trans-last,
+#ja-transmenu a.mainlevel-active-trans-last {
+	color: #FFFFFF;
+	background: url(../../images/mainnav-sep.gif) repeat-y bottom right #23211F;
+}

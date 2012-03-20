@@ -1,0 +1,79 @@
+/*------------------------------------------------------------------------
+# JA Larix  for Joomla 1.5 - Version 1.4 - Licence Owner JA130602
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+
+body#bd {
+	background: #D8EFF7;
+}
+
+a, a:hover, a:active, a:focus {
+	color: #1897C6;
+}
+
+input.addtocart {
+	background: url(../../images/cyan/button-addtocart-big.gif) no-repeat top center !important;
+	border: none;
+	height: 29px;
+}
+
+#ja-wrapper2 {
+	background: url(../../images/cyan/shadow-right.gif) repeat-y right #FFFFFF;
+}
+
+#ja-wrapper3 {
+	background: url(../../images/cyan/shadow-left.gif) repeat-y left;
+}
+
+#ja-mainbody-inner {
+	background: url(../../images/cyan/top-border-r.gif) no-repeat top right;
+	padding: 25px 0;
+}
+
+#ja-col1 div.moduletable h3 {
+	color: #1897C6;
+}
+
+#ja-headerwrap {
+	background: url(../../images/cyan/header-bg.gif) repeat top left;
+}
+
+h1.logo a {
+	background: url(../../images/cyan/logo.gif) no-repeat;
+}
+
+a.mainlevel#active_menu {
+	color: #1897C6;
+}
+
+a.sublevel:hover,
+a.sublevel:active,
+a.sublevel:focus {
+	color: #1897C6 !important;
+}
+
+#active_menu {
+	color: #1897C6 !important;
+}
+
+#ja-col1 {
+	background: url(../../images/cyan/top-border-l.gif) no-repeat top right;
+}
+
+#ja-vm-cart {
+	background: url(../../images/cyan/vm-cart-bg.gif) top right no-repeat;
+}
+
+#ja-vm-cart div.moduletable a {
+	background: url(../../images/cyan/button-viewcart.gif) top right no-repeat;
+}
+
+.transMenu .item#active {
+	background: #1897C6;
+}
